@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Joc</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="icon" type="image/x-icon" href="s1.png">
+        <style>
+            body{
+                background-image: url('s6.png');
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+            .A{
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                font-size: 18px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            @media (max-width:1500px){
+        body{
+        background-image:url("s4.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        #P{
+    width: 100%;
+    text-align: center;
+        }
+        img{
+    display: block;
+    margin: auto;
+        }
+        address{
+    text-align: center;
+        }
+            .A{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <li><a href="acasa.html">Acasă</a></li>
+            <li><a href="tur.html">Tur</a></li>
+            <li><a href="joc.html">Joc</a></li>
+            <li><a href="utilizari.html">Utilizari</a></li>
+            <li><a href="proprietati.html">Proprietăți</a></li>
+        </nav>
+        <div id="P">
+        <div>
+            <h1 class="h" id="h">Joc</h1>
+            <p id="V">Pentru a începe jocul, apasă pe buton.</p>
+            <button id="bu" onclick="start()">Start</button>
+        </div>
+        </div>
+        <div id="Q">
+            <div id="St">
+            <img src="s7.png" alt="s5" class="s5">
+            <img src="s7.png" alt="s5" class="s5">
+            <img src="s7.png" alt="s5" class="s5">
+            <img src="s7.png" alt="s5" class="s5">
+            <img src="s7.png" alt="s5" class="s5">
+            </div>
+            <div class="P">
+                <div>
+                <p id="Q1"></p>
+                <div id="BVA"style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <button class="A" id="A" onclick="raspuns1()">A</button>
+                <button class="A" id="B" onclick="raspuns2()">B</button>
+                <button class="A" id="C" onclick="raspuns3()">C</button>
+                </div>
+                <button style="display:none" id="N" onclick="next()">Inapoi</button>
+            </div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
