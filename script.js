@@ -6,14 +6,16 @@ function p(n){
                     document.body.style.backgroundAttachment = "fixed";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
+                document.getElementById("nu").style.display = "block";
         } else {
             document.body.style.backgroundImage = "url('" + v[n] + "')";
                     document.body.style.backgroundAttachment = "fixed";
         document.body.style.backgroundSize = "contain";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center";
+                document.getElementById("nu").style.display = "none";
+
         }
-        document.getElementById("nu").style.display = "block";
         document.getElementById("V").style.display = "none";
         document.getElementById("h").style.display = "none";
 }
